@@ -71,6 +71,7 @@ export default function CreateGameForm({ setGameInfo }) {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
         <FormField
+          defaultValue={''}
           control={form.control}
           name="username"
           render={({ field }) => (
@@ -92,6 +93,7 @@ export default function CreateGameForm({ setGameInfo }) {
         />
 
         <FormField
+          defaultValue={''}
           control={form.control}
           name="roomName"
           render={({ field }) => (
@@ -107,6 +109,7 @@ export default function CreateGameForm({ setGameInfo }) {
         />
 
         <FormField
+          defaultValue={0}
           control={form.control}
           name="numPlayers"
           render={({ field }) => (
@@ -156,6 +159,7 @@ export default function CreateGameForm({ setGameInfo }) {
         />
 
         <FormField
+          defaultValue={0}
           control={form.control}
           name="aiPlayers"
           render={({ field }) => (

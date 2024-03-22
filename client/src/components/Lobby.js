@@ -9,7 +9,7 @@ const Lobby = function ({ gameInfo }) {
   const [totaPlayers, setTotalPlayers] = useState(0);
 
   return (
-    <div className="flex flex-col bg-slate-200 border-slate-400 p-4 rounded-md">
+    <div className="flex flex-col bg-slate-200 border-slate-400 p-4 rounded-md h-full">
       <div className="flex-[0_0_auto]">
         <div className="justify-center text-center">
           <div className="flex flex-col w-full items-center space-x-2 mb-8">
@@ -53,7 +53,7 @@ const Lobby = function ({ gameInfo }) {
 
       <div className="border border-black mt-2 max-h-full flex-1 h-auto max-w-screen"></div>
 
-      <Link to="Game">
+      <Link to="game">
         <Button className="mt-4">Start Game</Button>
       </Link>
     </div>
